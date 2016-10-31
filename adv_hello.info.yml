@@ -1,6 +1,0 @@
-name: Advanced Hello-World
-description: An advanced Hello-World example
-package: Custom
-type: module
-version: 0.1
-core: 8.x

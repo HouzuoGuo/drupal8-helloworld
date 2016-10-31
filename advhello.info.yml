@@ -1,0 +1,7 @@
+name: Advanced HelloWorld
+description: An advanced HelloWorld example
+package: Media
+type: module
+version: 0.1
+core: 8.x
+configure: advhello.settings

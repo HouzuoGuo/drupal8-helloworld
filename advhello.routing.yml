@@ -1,0 +1,15 @@
+advhello.page:
+  path: '/advhello/page'
+  defaults:
+    _controller: '\Drupal\advhello\Controller\AdvHelloController::page'
+    _title: 'Hello Text Entries'
+  requirements:
+    _permission: 'access content'
+
+advhello.settings:
+  path: '/advhello/settings'
+  defaults:
+    _controller: '\Drupal\advhello\Controller\AdvHelloController::settings'
+    _title: 'Define Hello Text Entries'
+  requirements:
+    _permission: 'administer advhello'
