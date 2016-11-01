@@ -1,0 +1,6 @@
+drupal.advhello.ckeditor:
+  version: VERSION
+  js:
+    js/plugins/ckeditor/advhello.ckeditor.js: {}
+  dependencies:
+    - ckeditor/drupal.ckeditor

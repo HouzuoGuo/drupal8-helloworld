@@ -1,5 +1,5 @@
 advhello.settings:
-  title: 'Define Hello Text Entries'
-  description: 'Configure Advanced Helloworld'
+  title: 'Advanced HelloWorld Settings'
+  description: 'Define HelloWorld text entries.'
   route_name: advhello.settings
   parent: system.admin_config_media

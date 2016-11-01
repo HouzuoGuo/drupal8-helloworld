@@ -7,9 +7,9 @@ advhello.page:
     _permission: 'access content'
 
 advhello.settings:
-  path: '/advhello/settings'
+  path: '/admin/config/media/advhello/settings'
   defaults:
-    _controller: '\Drupal\advhello\Controller\AdvHelloController::settings'
+    _form: '\Drupal\advhello\Form\TextEntrySettingsForm'
     _title: 'Define Hello Text Entries'
   requirements:
-    _permission: 'administer advhello'
+    _permission: 'administer site configuration'
