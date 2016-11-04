@@ -1,8 +1,16 @@
-advhello.page:
-  path: '/advhello/page'
+advhello.choosetxt:
+  path: '/advhello/choosetxt'
   defaults:
-    _controller: '\Drupal\advhello\Controller\AdvHelloController::page'
-    _title: 'Hello Text Entries'
+    _controller: '\Drupal\advhello\Controller\AdvHelloController::chooseTxt'
+    _title: 'Choose a Hello Text Entry'
+  requirements:
+    _permission: 'access content'
+
+advhello.displaytxt:
+  path: '/advhello/displaytxt'
+  defaults:
+    _controller: '\Drupal\advhello\Controller\AdvHelloController::displayTxt'
+    _title: 'Display All Hello Text Entries'
   requirements:
     _permission: 'access content'
 

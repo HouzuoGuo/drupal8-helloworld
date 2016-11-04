@@ -4,3 +4,15 @@ drupal.advhello.ckeditor:
     js/plugins/ckeditor/advhello.ckeditor.js: {}
   dependencies:
     - ckeditor/drupal.ckeditor
+
+drupal.advhello:
+  version: VERSION
+  js:
+    js/advhello.js: {}
+  css:
+    component:
+      css/advhello.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
