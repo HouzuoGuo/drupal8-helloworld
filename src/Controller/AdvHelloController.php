@@ -16,11 +16,11 @@ class AdvHelloController extends ControllerBase {
   }
 
   public function chooseTxt(Request $request) {
+    $conf = \Drupal::config('advhello.settings');
     $page = array();
     $page['#attached']['library'][] = 'advhello/drupal.advhello';
-    $page['#attached']['drupalSettings']['test_settings'] = array('hi_there' => '123');
+    $page['#attached']['drupalSettings']['texts'] = array($conf->get('t1'), $conf->get('t2'), $conf->get('t3'));
     $content = \Drupal::service('bare_html_page_renderer')->renderBarePage($page, 'Choose Text', '', array('#show_messages' => FALSE))->getContent();
     return new Response($content);
-   
   }
 }

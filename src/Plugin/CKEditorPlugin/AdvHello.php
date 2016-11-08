@@ -30,8 +30,10 @@ class AdvHello extends CKEditorPluginBase {
   }
 
   public function getConfig(Editor $editor) {
+    global $base_url;
     return array(
-      'PNGIcon' => file_create_url(drupal_get_path('module', 'advhello') . '/js/plugins/ckeditor/advhello-icon.png')
+      'PNGIcon' => file_create_url(drupal_get_path('module', 'advhello') . '/js/plugins/ckeditor/advhello-icon.png'),
+      'BaseURL' => $base_url
     );
   }
 }
